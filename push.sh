@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex
 
-cd glew
+cd glew-with-extensions
 
 git push --tags origin
 git push --all origin

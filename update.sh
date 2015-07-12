@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ex 
 
-cd glew
+cd glew-with-extensions
 
 git fetch --all
 git fetch -t upstream
