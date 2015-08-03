@@ -25,8 +25,8 @@ git commit -m "make extensions on $(date -R -u)"
 git checkout -B master-ext origin/master-ext || git checkout -B master-ext master
 
 # first merge ordinary commits then get the extensions
-git merge master
-git cherry-pick tmp
+git merge -m "update from 'master'" master
+git cherry-pick --strategy=recursive -Xtheirs tmp
 git branch -D tmp
 
 # create/update extension branches
